@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+  <style>
+     .container{padding: 2rem;
+                /* background-color: yellow */
+    }
+    .slider-wrapper{position: relative;
+                    /* background-color: blue; */
+                    max-width: 80rem;
+                    margin: auto
+    }
+    .slider{display: flex;
+           /* background-color: pink; */
+           aspect-ratio:28 / 9;
+           overflow-x: hidden;
+           scroll-snap-type: x mandatory;
+           scroll-behavior: smooth;
+           box-shadow: 0 0.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+           border-radius: 0.5rem;
+           column-gap: 47px
+    }
+    .slider .divf{
+         flex: 1 0 30%;
+         scroll-snap-align:start;
+         object-fit: cover
+     }
+     .slider-nav{display: flex;
+                column-gap: 1rem;
+                position: absolute;
+                bottom: 1.25rem;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1;
+    }
+    .slider-nav a{width: 0.7rem;
+                  height: 0.7rem;
+                  border-radius: 50%;
+                  background-color:white;
+                  border: 1px solid rgb(0, 174, 255);
+                  opacity: 0.75;
+                  transition: opacity ease 250ms
+
+    }
+    .slider-nav a:hover{
+            background-color: rgb(0, 174, 255)
+    }
+    .divf{width: 30%;
+         height: 340px;
+          box-shadow: 2px 2px 6px rgb(180, 180, 180);
+          display: flex;
+          padding: 20px;
+          padding-left: 29px;
+          box-sizing: border-box;
+          justify-content: center;
+          flex-wrap: wrap;
+          background-color: white
+
+    }
+    .divf i{color: rgb(184, 184, 184);
+    }
+    img{border-radius: 100%
+    }
+    h3{width: 100%;
+      text-align: center;
+      margin: 0;
+      font-size: 17px
+    }
+    h4{margin: 0;
+        color: gray;
+             font-size: 15px;
+    }
+  </style>
+<body>
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div id="slide-1" class="divf">
+                    <p> <i class="fa fa-quote-left"></i>
+                        Lorem ipsum dolor sit, amet mfhy consectetur adipisicing elit.
+                         Voluptate dolorem animi suscipit delectus necessitatibus,dhdy
+                          inventore laboriosam quis veniam kduw.
+                          <i class="fa fa-quote-right"></i>
+                      </p>
+                      <img src="img/testimonials/testimonials-1.jpg" alt="Picture is here" width="80xp" height="80px"> 
+                      <h3>Saul Goodman</h3>
+                      <h4 class="sppan2">CEO & Founder</h4>
+                </div>
+
+                <div id="slide-2" class="divf">
+                    <p> <i class="fa fa-quote-left"></i>
+                        Lorem ipsum dolor sit, amet mfhy consectetur adipisicing elit.
+                         Voluptate dolorem animi suscipit delectus necessitatibus,dhdy
+                          inventore laboriosam quis veniam kduw.
+                          <i class="fa fa-quote-right"></i>
+                      </p>
+                      <img src="img/testimonials/testimonials-2.jpg" alt="Picture is here" width="80xp" height="80px"> 
+                      <h3>Saul Goodman</h3>
+                      <h4 class="sppan2">CEO & Founder</h4>
+                </div>
+
+                <div id="slide-3" class="divf">
+                    <p> <i class="fa fa-quote-left"></i>
+                        Lorem ipsum dolor sit, amet mfhy consectetur adipisicing elit.
+                         Voluptate dolorem animi suscipit delectus necessitatibus,dhdy
+                          inventore laboriosam quis veniam kduw.
+                          <i class="fa fa-quote-right"></i>
+                      </p>
+                      <img src="img/testimonials/testimonials-3.jpg" alt="Picture is here" width="80xp" height="80px"> 
+                      <h3>Saul Goodman</h3>
+                      <h4 class="sppan2">CEO & Founder</h4>
+                </div>
+
+                <div id="slide-4" class="divf">
+                    <p> <i class="fa fa-quote-left"></i>
+                        Lorem ipsum dolor sit, amet mfhy consectetur adipisicing elit.
+                         Voluptate dolorem animi suscipit delectus necessitatibus,dhdy
+                          inventore laboriosam quis veniam kduw.
+                          <i class="fa fa-quote-right"></i>
+                      </p>
+                      <img src="img/testimonials/testimonials-4.jpg" alt="Picture is here" width="80xp" height="80px"> 
+                      <h3>Saul Goodman</h3>
+                      <h4 class="sppan2">CEO & Founder</h4>
+                </div>
+
+                <div id="slide-5" class="divf">
+                    <p> <i class="fa fa-quote-left"></i>
+                        Lorem ipsum dolor sit, amet mfhy consectetur adipisicing elit.
+                         Voluptate dolorem animi suscipit delectus necessitatibus,dhdy
+                          inventore laboriosam quis veniam kduw.
+                          <i class="fa fa-quote-right"></i>
+                      </p>
+                      <img src="img/testimonials/testimonials-5.jpg" alt="Picture is here" width="80xp" height="80px"> 
+                      <h3>Saul Goodman</h3>
+                      <h4 class="sppan2">CEO & Founder</h4>
+                </div>
+            </div>
+
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+                <a href="#slide-5"></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portofilo Site</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+   
+</head>
+  <style>
+      *{box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+
+ }
+  .nav-first{width: 100%;
+      padding-left: 60px;
+      padding-top: 10px;
+      display: flex;
+      box-shadow: 3px 3px 6px gray;
+      position: fixed;
+      background-color: white;
+      z-index: 1;
+  }
+ .nav-first .head1{font-size: 35px;
+            width: 300px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+  .nav-first ul{list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 260px
+ }
+ .nav-first li a{text-decoration: none;
+      display: flex;
+      color: rgb(77, 76, 76);
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      padding: 22px;
+      transition: 0.3s
+ }
+ .nav-first li a:hover,:focus{color: rgb(0, 195, 255);
+ }
+ .nav-first i{margin: 5px;
+       font-size: 12px
+ }
+ .dropdown .content{display: block;
+             box-shadow: 3px 3px 4px gray;
+             position: absolute;
+             right: 240px;
+             display: none;
+             z-index: 2;
+             background-color: white
+             /* transition: 0.3s */
+ }
+ .dropdown .content a{padding: 10px 10px;
+                       transition: 0.3s
+ }
+ .dropdown:hover .content{display: block
+ }
+ .dropdown1 .content2{display: block;
+                     width: 200px;
+                      box-shadow: 3px 3px 4px gray;
+                      position: absolute;
+                      right:-190px;
+                      bottom: -35px;
+                      background-color: white
+ }
+  .dropdown1 .content2 a{padding: 10px 20px
+ }
+ #icon{font-size: 15px;
+       color: rgb(77, 76, 76);
+       transition: 0.3s;
+       margin-top: 20px
+ }
+ #icon:hover{color: rgb(0, 195, 255);
+ }
+ .sec1{background-image: url(img/hero-bg.jpg);
+       background-size: 100% 150%;
+       width: 100%;
+       height: 500px;
+       display: flex;
+       position: relative;
+       top: 77px;
+       text-align: center;
+       color: white;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       z-index: -1
+ }
+ .sec1:before {
+    content: "";
+    background: rgba(56, 64, 70, 0.548);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    z-index: -1;
+   
+  }
+ .sec1 div{z-index: -1;
+ }
+  .sec1 div h1{color: white;
+              font-size: 50px
+ }    
+ .sec1 div p{font-size: 25px;
+ }
+ .sec1 div a{font-size: 15px;
+             background-color: rgb(3, 160, 207);
+             padding: 12px 28px;
+             text-decoration: none;
+             color: white;
+             border-radius: 5px;
+             letter-spacing: 4px;
+             transition: 0.5s
+ }
+ .sec1 div a:hover{background-color: rgb(0, 195, 255);
+ }
+ .sec2{padding: 30px 0px;
+       padding-bottom: 40px;
+       color: rgb(44, 44, 44);
+        margin-top: 100px
+       
+ }
+ .sec2 .divwhatwedo{text-align: center;
+                    display: block
+ }
+ .divwhatwedo h1{font-size: 30px;
+ }
+ .divwhatwedo p{font-size: 15px;
+                margin-top: 15px
+ }
+ hr{width: 160px;
+    margin: auto;
+    margin-top: 20px
+ }
+ .loremdiv{width: 30%;
+           text-align: center;
+           margin-top: 50px;
+           display: inline-block;
+           transition: 0.3s;
+           padding: 30px 20px
+ }
+ .loremdiv i{font-size: 28px;
+            color: rgb(6, 137, 197);
+            background-color: rgb(191, 229, 241);
+            border-radius: 100%;
+            padding: 19px
+ }
+ .loremdiv h2{margin-top: 29px;
+              transition: 0.4s
+ }
+ .loremdiv h2:hover{color: rgb(6, 137, 197)
+ }
+ .loremdiv p{margin-top: 15px;
+ }
+ .loremdiv:hover{box-shadow: 2px 2px 20px rgb(153, 153, 153)
+ }
+ #divtransfer{margin-left: 90px;
+ }
+ .sec3{padding: 40px 60px;
+       display: flex;
+      margin-top: 50px
+ }
+ .sec3 img{margin-left: 60px
+ }
+ .sec3 .divlarge{width: 47%;
+           color: rgb(44, 44, 44);
+           margin-left: 30px;
+ }
+ .sec3 .divlarge h1{font-size: 30px;
+ }
+ .sec3 .divlarge p{margin-top: 16px;
+             line-height: 25px
+ }
+ #doublecheck{color:rgb(6, 137, 197);
+  } 
+  .para{width: 440px;
+        display: inline-block;
+ }
+ .divsmall{width: 47%;
+           margin-top: 29px;
+ }
+ .divsmall i{font-size: 40px;
+            color:rgb(6, 137, 197)
+ }
+ .contain-divsmall{display: flex
+ }
+ .sec4{width: 100%;
+      display:flex;
+      margin-top: 50px;
+      padding: 20px 60px
+ }
+ .sec4 .divs{width: 100%;
+           margin-left: 60px;
+           font-size: 14px
+ }
+ .sec4 .divs .percentage{float: right
+ }
+ .contain-span{margin-top: 20px
+ }
+.show {background: #e6e8eb;
+       margin-top: 20px
+ }
+
+.show-inside { width: 1px;
+               height: 10px;
+               transition: 0.9s;
+               background-color: #27d4ff;
+}
+.contain-lan{width: 47%;
+}
+#containm2{margin-left: 20px;
+}
+.sec5{display: flex;
+     padding: 50px 60px
+}
+.sec5 div{width: 25%;
+         text-align: center;
+
+}
+.sec5 div i{font-size: 30px;
+           color: white;
+           background-color: rgb(35, 145, 209);
+           padding: 10px;
+           border-radius: 100%;
+           margin-bottom: 10px
+}
+.sec5 div span{font-size: 40px;
+              color: #05469b; 
+              font-weight: bold    
+}
+.sec5 div p{color: rgb(68, 68, 68);
+             font-size: 15px;
+             margin-top: 10px
+}
+.sec6{padding: 50px 50px;
+     background-color: #edf7fa;
+     color: rgb(56, 56, 56)
+}
+.about-service{text-align: center;
+              font-size: 18px;
+             
+}
+.about-service p{margin-top: 18px; 
+                font-size: 15px
+}
+.about-service h1{font-size: 34px
+}
+.service-divs{width: 47%;
+             display: flex;
+             padding: 30px;
+             transition: 0.5s;
+             margin-top: 50px;
+             background-color: white;
+             margin-left: 30px;
+             border-radius: 7px
+}
+.service-divs i{font-size: 40px;
+               color:#0689c5
+}
+.service-divs div{margin-left: 20px;
+                 width: 80%
+}
+.service-divs div p{margin-top: 20px;
+                   line-height: 26px;
+                   font-size: 15px
+}
+.service-divs:hover{box-shadow: 3px 3px 20px rgb(175, 174, 174);
+}
+.i-contain-divs{display: flex; 
+                flex-wrap: wrap
+}
+.sec7{padding: 40px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 60px
+}
+.nav-portofilo{width: 100%
+}
+.nav-portofilo ul{list-style-type: none;
+                 text-align: center;
+                 display: flex;
+                 gap: 10px;
+                 margin-top: 40px;
+                 margin-left: 550px
+}
+.nav-portofilo li a{text-decoration: none;
+                   color: black;
+                   padding: 15px 25px;
+                   border-radius: 7px;
+}
+.nav-portofilo li a:hover{background-color: #1c8db3;
+}
+.list-item{background-color: #1c8db3;
+          padding: 15px 15px
+}
+.portofilo{text-align: center;
+           font-size: 25px;
+           width: 100%;
+}
+.portofilo p{margin-top: 20px;
+              font-size: 15px;
+}
+.continer-difg{width: 100%;
+             height: 600px;
+             display: flex;
+             gap: 40px;
+             flex-wrap: wrap;
+             padding: 50px;
+             padding-left: 100px;
+             margin-top: 60px
+}
+.samll-divv{width: 30%;
+           height: 300px;
+           box-shadow: 1px 1px 8px rgb(230, 230, 230);
+           border-radius: 3px;
+}
+.samll-divv:hover{box-shadow: 1px 1px 10px rgb(197, 197, 197)
+}
+.pic-container{width: 100%;
+              height: 230px
+}
+.blank-hover{width: 100%;
+           height: 220px;
+           background-color: rgba(0, 0, 0, 0.466);
+           text-align: center;
+           position: relative;
+           bottom: 225px;
+           display: none;
+           border-radius: 3px;
+           transition: 0.3s
+}
+.blank-hover i{color: black;
+              padding: 10px;
+              border-radius: 100%;
+              background-color: white;
+              margin-top: 100px;
+              
+}
+.blank-hover i:hover{background-color: #14ade0;
+                     color: white
+}
+.pic-container:hover .blank-hover{display: block
+}
+.div-sspan{width: 100%;
+          text-align: center;
+          padding: 10px
+}
+.span-second{color: gray;
+            font-size: 15px;
+}
+.app{width: 100%;
+    display: flex
+}
+.sec8{ background-color: #edf7fa;
+      padding: 50px;
+      margin-top: 500px
+}
+
+ /* slider starts ---------------*/
+
+.container{padding: 2rem;
+                /* background-color: yellow */
+    }
+    .slider-wrapper{position: relative;
+                    /* background-color: blue; */
+                    max-width: 80rem;
+                    margin: auto
+    }
+    .slider{display: flex;
+           /* background-color: pink; */
+           aspect-ratio:28 / 9;
+           overflow-x: hidden;
+           scroll-snap-type: x mandatory;
+           scroll-behavior: smooth;
+           /* box-shadow: 0 0.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25); */
+           border-radius: 0.5rem;
+           column-gap: 47px;
+           /* position: absolute */
+    }
+    .slider .divf{
+         flex: 1 0 30%;
+         scroll-snap-align:start;
+         object-fit: cover;
+         
+     }
+     .slider-nav{display: flex;
+                column-gap: 1rem;
+                position: absolute;
+                bottom: 1.25rem;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1;
+    }
+    .slider-nav a{width: 0.7rem;
+                  height: 0.7rem;
+                  border-radius: 50%;
+                  background-color:white;
+                  border: 1px solid rgb(0, 174, 255);
+                  opacity: 0.75;
+                  transition: opacity ease 250ms
+
+    }
+    .slider-nav a:hover{
+            background-color: rgb(0, 174, 255)
+    }
+    .divf{width: 30%;
+         height: 340px;
+          box-shadow: 2px 2px 6px rgb(180, 180, 180);
+          display: flex;
+          padding: 20px;
+          padding-left: 29px;
+          box-sizing: border-box;
+          justify-content: center;
+          flex-wrap: wrap;
+          background-color: white
+
+    }
+    .divf i{color: rgb(184, 184, 184);
+    }
+    .divf img{border-radius: 100%
+    }
+    h3{width: 100%;
+      text-align: center;
+      margin: 0;
+      font-size: 17px
+    }
+    h4{margin: 0;
+        color: gray;
+             font-size: 15px;
+    }
+
+/* slider ends----------------- */
+
+.sec9{width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     padding: 50px
+}
+.container-of-team{width: 100%;
+                 display: flex;
+                 flex-wrap: wrap;
+                 column-gap: 30px;
+                 padding: 30px;
+                 justify-content: center
+}
+.container-of-team div{width: 30%;
+                     height: 420px;
+                     box-shadow: 2px 2px 11px rgb(196, 195, 195);
+                     text-align: center;
+                     padding: 20px;
+                     display: flex;
+                     flex-wrap: wrap;
+                     justify-content: center;
+                     gap: 10px;
+}
+.container-of-team div img{border-radius: 100%;
+}
+.container-of-team div span{width: 100%;
+                           font-weight: bold
+}
+
+.dspan{font-size: 12px;
+     color: rgb(56, 56, 56);
+     font-style: italic
+}
+.container-of-team div p{color:gray;
+                         font-style: italic;
+                         font-size: 15px;
+}
+.container-of-team div i{font-size: 40px
+}
+#icon1{font-size: 20px;
+       color: #818080;
+       transition: 0.3s;
+       margin-top: 20px;
+     
+ }
+ #icon1:hover{color: rgb(0, 195, 255);
+ }
+ .sec10{width: 100%;
+        background-color: #edf7fa;
+         padding: 50px;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center
+ }
+ .sec10 .div-location{background-color: white;
+                       width: 80%;
+                       padding: 40px 30px;
+                       display: flex;
+                       column-gap: 50px;
+                       margin-top: 50px
+ }
+ .div-location i{color: rgb(0, 195, 255);
+                 background-color: rgb(222, 240, 247);
+                 padding: 12px;
+                 border-radius: 100%;
+                 font-size: 18px
+ }
+ .div-location i:hover{color: white;
+                      background-color: rgb(11, 96, 192);
+ }
+ .div-location div{ width: 30%
+ }
+ .div-location div address{font-size: 13px;
+                           color: gray;
+                           margin-left: 47px
+ }
+ .form-div{background-color: white;
+                       width: 80%;
+                       padding: 40px 30px;
+                       display: flex;
+                       margin-top: 50px
+ }
+ .form-div input{padding: 15px;
+                 width: 49%;
+                 margin-top: 30px
+ }
+ .form-div textarea{margin-top: 30px;
+ }
+ .form-div .subject{width: 98%
+ }
+ .form-div .submit-button{width: 16%;
+                         background-color: #1075c7;
+                         color: white;
+                         border-radius: 5px;
+                         border: none;
+                         text-align: center;
+                         margin-left: 400px
+ }
+ .form-div input:focus{ border: none
+ }
+ .sec11{width: 100%;
+       display: flex;
+       padding: 30px
+ }
+ .adrs{width: 23%;
+       padding-left: 50px;
+       line-height: 30px
+ }
+ .adrs span{color: gray;
+ }
+ .adrs b{color: rgb(90, 90, 90)}
+ .adrs .first-one{color: gray;
+                 font-size: 13px;
+ }
+ .adrs1{width: 23%;
+       padding-left: 50px;
+       line-height: 40px
+ }
+ .adrs1 a{text-decoration: none;
+           color:gray ;
+           transition: 0.3s;
+           margin-left: 14px;
+           font-size: 14px
+ }
+ .adrs1 a:hover{color: rgb(16, 168, 219)
+ }
+ .adrs1 i{color: rgb(7, 128, 209);
+ }
+ .newsletter{width: 30%;
+             line-height: 30px
+ }
+ .newsletter input{padding: 11px;
+                   width: 66%;
+                   margin-top: 30px
+ }
+ .newsletter .submit-button{width: 22%;
+                         background-color: #0d77ce;
+                         color: white;
+                         border: none;
+                         height: 42px;
+                         text-align: center;
+                         position: relative;
+                         right: 10px
+ }
+ footer{width: 100%;
+        background-color: rgb(222, 240, 247);
+        padding: 20px 50px;
+        color: #535252;
+        display: flex;
+        justify-content: center
+ }
+  footer div{width: 300px;
+             margin-left: 100px;
+             font-size: 12px;
+             line-height: 25px
+  }
+  footer a{color: rgb(0, 110, 255);
+           text-decoration: none
+  }
+  footer .div000{width: 200px;
+                 margin-left: 700px
+  }
+  footer .div000 i{color: white;
+                   background-color: #2188e9;
+                   padding: 12px;
+                   border-radius: 100%;
+                   transition: 0.3s
+  }
+  footer .div000 i:hover{background-color:#8fc0ee 
+  }
+  #ikonj{background-color: rgb(0, 183, 255);
+         font-size: 25px;
+         color: white;
+         padding: 12px;
+         border-radius: 10px;
+         position: fixed;
+         bottom: 5px;
+         right: 0
+      
+  }
+  </style>
+<body>
+   <!-- Navbar -->
+     <nav class="nav-first">
+       <h1 class="head1">LUMIA</h1>
+         <ul>
+             <li><a href="#home">Home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#services">Service</a></li>
+             <li><a href="#portofilo">Portofilo</a></li>
+             <li><a href="#testomonial">Testimonials</a></li>
+             <li class="dropdown"><a href="">DropDown  <i class="fa fa-chevron-down"></i></a>
+                  <ul class="content">
+                       <li><a href="">Drop Down 1</a></li>
+                       <li class="dropdown1"><a href="">Deep Drop Down <i class="fa fa-chevron-down"></i></a>
+                        <ul class="content2">
+                          <li><a href="#">Deep Drop Down 1</a></li>
+                          <li><a href="#">Deep Drop Down 2</a></li>
+                          <li><a href="#">Deep Drop Down 3</a></li>
+                          <li><a href="#">Deep Drop Down 4</a></li>
+                          <li><a href="#">Deep Drop Down 5</a></li>
+                        </ul>
+                    </li>
+                       <li><a href="">Drop Down 2</a></li>
+                       <li><a href="">Drop Down 3</a></li>
+                       <li><a href="">Drop Down 4</a></li>
+                   </ul>
+            </li>
+             <li><a href="#contact">Contact</a></li>
+         </ul>
+
+         <i id="icon" class="fab fa-twitter"></i>
+         <i id="icon" class="fab fa-facebook"></i>
+         <i id="icon" class="fab fa-instagram"></i>
+         <i id="icon" class="fab fa-linkedin"></i>
+     </nav>
+      <!-- navbar End -->
+
+      <!-- section after navbar -->
+     <section id="home" class="sec1">
+          <div >
+            <h1>Welcome To Lumia</h1>
+            <p>We are team of talented designers making websites with Bootstrap</p> <br><br>
+            <a href="">GET STARTED</a>
+          </div>
+     </section>
+        
+     <!-- End section after navbar -->
+
+     <a href="#home"> <i id="ikonj" class="fa fa-arrow-up"></i></a>
+
+     <!-- section what we do -->
+     <section class="sec2">
+         <div class="divwhatwedo">
+           <h1>What We Do</h1>
+            <hr>
+           <p>Sint aliquam mollitia incidunt. Officia tempora dignissimos ullam voluptatibus</p>
+         </div>
+      
+         <div class="loremdiv" id="divtransfer">
+           <i class="fa fa-globe"></i>
+           <h2>Lorem Ipsum</h2>
+           <p>dolorem optio inventore omnis, itaque ipsam culpa dolor atque obcaecati eaque officia</p>
+         </div>
+         <div class="loremdiv">
+            <i class="fa fa-file-alt"></i>
+            <h2>Sed ut persipectias</h2>
+            <p>Quaerat veritatis error asperiores inventore amet maiores exercitationem pariatur.</p>
+          </div>
+          <div class="loremdiv">
+              <i class="fa fa-tachometer-alt"></i>
+              <h2>Magni Dolores</h2>
+              <p>Itaque ipsam culpa dolor atque obcaecati eaque officia  similique nam hic non fugit!</p>
+            </div>
+     </section>
+
+     <!-- Section Three Ends -->
+  
+     <!-- section About starts -->
+
+      <Section id="about" class="sec3">
+          <img src="img/about.jpg" alt="Picture is Here" width="47%" height="430px">
+          <div class="divlarge">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consectetur
+               eum nostrum? Iste cupiditate voluptatem sint neque minima iusto, alias.
+            </p>
+
+            <i id="doublecheck" class="fa fa-check-double"></i>
+            <p class="para">Iste cupiditate voluptatem sint neque minima iusto, alias.</p>
+        <br>
+            <i id="doublecheck" class="fa fa-check-double"></i>
+            <p class="para">Sint consectetur eum nostrum dolor sit amet? </p>
+          
+          <div class="contain-divsmall">
+            <div class="divsmall">
+              <i class="fa fa-file-invoice"></i>
+              <h2>consectetur eum</h2>
+              <p>Itaque ipsam culpa dolor atque obcaecati eaque officia  similique nam hic non fugit!</p>
+            </div>
+            <div class="divsmall">
+              <i class="fa fa-qrcode"></i>
+              <h2>consectetur eum</h2>
+              <p>Itaque ipsam culpa dolor atque obcaecati eaque officia  similique nam hic non fugit!</p>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      <!-- Section About End -->
+
+      <!-- Section Languages Starts -->
+      <section class="sec4">
+
+        <div class="contain-lan">
+            <div class="divs">
+               <div class="contain-span">
+                  <span>HTML</span>
+                <span class="percentage">100%</span>
+               </div>
+                <div class="show">
+                   <div class="show-inside" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="divs">
+                <div class="contain-span">
+                    <span>CSS</span>
+                    <span class="percentage">90%</span>
+                </div>
+               <div class="show">
+                  <div class="show-inside" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+               </div>
+             </div>
+
+             <div class="divs">
+               <div class="contain-span">
+                  <span>JavaScript</span>
+                  <span class="percentage">75%</span>
+               </div>
+               <div class="show">
+                  <div class="show-inside" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+               </div>
+             </div>
+        </div>
+        
+        <div class="contain-lan" id="containm2">
+            <div class="divs">
+                <div class="contain-span">
+                    <span>PHP</span>
+                    <span class="percentage">80%</span>
+                 </div>
+                <div class="show">
+                   <div class="show-inside" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="divs">
+                  <div class="contain-span">
+                      <span>WordPress/CMS</span>
+                      <span class="percentage">90%</span>
+                   </div>
+                <div class="show">
+                   <div class="show-inside" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="divs">
+                  <div class="contain-span">
+                      <span>Photoshop</span>
+                      <span class="percentage">55%</span>
+                   </div>
+                <div class="show">
+                   <div class="show-inside" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+        </div>
+      </section>
+     
+      <!-- Section Languaeges End -->
+      
+     <!-- section numbers  -->
+      <section class="sec5">
+        <div>
+            <i class="fa fa-laugh"></i> <br>
+            <span>232</span>
+            <p>Happy Clients</p>
+        </div>
+
+        <div>
+            <i class="fa fa-journal-whills"></i> <br>
+            <span>521</span>
+            <p>Projects</p>
+        </div>
+
+        <div>
+            <i class="fa fa-headset"></i> <br>
+            <span>1432</span>
+            <p>Hours of Support</p>
+        </div>
+
+        <div>
+            <i class="fa fa-user-tie"></i> <br>
+            <span>15</span>
+            <p>Hard Workers</p>
+        </div>
+     </section>
+     <!-- section numbers end -->
+
+     <!-- section  services  -->
+
+      <section id="services" class="sec6">
+          <div class="about-service">
+              <h1>Services</h1>
+               <hr>
+              <p>Sint aliquam mollitia incidunt. Officia tempora dignissimos ullam voluptatibus</p>
+            </div>
+
+            <div class="i-contain-divs">
+                <div class="service-divs">
+                    <i class="fa fa-toolbox"></i>
+                    <div>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consectetur
+                            eum nostrum? Iste cupiditate voluptatem sint neque minima iusto, alias.
+                        </p>
+                    </div>
+                 </div>
+                 <div class="service-divs">
+                    <i class="fa fa-calendar-check "></i>
+                    <div>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consectetur
+                            eum nostrum? Iste cupiditate voluptatem sint neque minima iusto, alias.
+                        </p>
+                    </div>
+                 </div>
+                 <div id="div-sepatrate" class="service-divs">
+                    <i class="fa fa-chart-bar"></i>
+                    <div>
+                        <h3>Minima iusto</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consectetur
+                            eum nostrum? Iste cupiditate voluptatem sint neque minima iusto, alias.
+                        </p>
+                    </div>
+                 </div>
+                 <div class="service-divs">
+                    <i class="fa fa-binoculars"></i>
+                    <div>
+                        <h3>Sint consectetur</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consectetur
+                            eum nostrum? Iste cupiditate voluptatem sint neque minima iusto, alias.
+                        </p>
+                    </div>
+                 </div>
+                 <div class="service-divs">
+                    <i class="fa fa-sun "></i>
+                    <div>
+                        <h3>Sint neque</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consectetur
+                            eum nostrum? Iste cupiditate voluptatem sint neque minima iusto, alias.
+                        </p>
+                    </div>
+                 </div>
+                 <div class="service-divs">
+                    <i class="fa fa-calendar-alt"></i>
+                    <div>
+                        <h3>consectetur</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consectetur
+                            eum nostrum? Iste cupiditate voluptatem sint neque minima iusto, alias.
+                        </p>
+                    </div>
+                 </div>
+            </div>
+      </section>
+     
+      <!-- section services ends -->
+
+      <!-- portofilo starts at here -->
+
+      <section id="portofilo" class="sec7">
+          <div class="portofilo">
+              <h1>Portofilo</h1>
+               <hr>
+              <p>Sint aliquam mollitia incidunt. Officia tempora dignissimos ullam voluptatibus</p>
+            </div>
+        
+            <nav class="nav-portofilo">
+                <ul>
+                  <li><a class="list-item" href="">All</a></li>
+                  <li class="listitem-app"><a href="#appp">App</a></li>
+                  <li><a href="">Web</a></li>
+                  <li><a href="">Card</a></li>
+                </ul>
+            </nav>
+
+            <!-- picture with hover  -->
+
+            <div class="continer-difg">
+               <div class="samll-divv">
+                 <div class="pic-container">
+                    <img src="img/portfolio-details-1.jpg" alt="Picture is here" width="100%" height="220px">
+                    <div class="blank-hover">
+                      <a href="img/portfolio-details-1.jpg"><i class="fa fa-plus"></i></a> 
+                      <a href="Portofilo-Details.html" target="black"><i class="fa fa-link"></i></a> 
+                    </div>
+                 </div>
+                 <div class="div-sspan">
+                   <span>App 1</span>  <br>
+                   <span class="span-second">App</span>
+                 </div>
+               </div>
+
+               <div class="samll-divv">
+                  <div class="pic-container">
+                     <img src="img/portfolio/portfolio-2.jpg" alt="Picture is here" width="100%" height="220px">
+                     <div class="blank-hover">
+                       <a href="img/portfolio/portfolio-2.jpg"><i class="fa fa-plus"></i></a> 
+                       <a href="Portofilo-Details.html" target="black"><i class="fa fa-link"></i></a> 
+                     </div>
+                  </div>
+                  <div class="div-sspan">
+                    <span>Web 3</span>  <br>
+                    <span class="span-second">Web</span>
+                  </div>
+                </div>
+
+                <div class="samll-divv">
+                    <div class="pic-container">
+                       <img src="img/portfolio/portfolio-3.jpg" alt="Picture is here" width="100%" height="220px">
+                       <div class="blank-hover">
+                         <a href="img/portfolio/portfolio-3.jpg"><i class="fa fa-plus"></i></a> 
+                         <a href="Portofilo-Details.html"  target="black"><i class="fa fa-link"></i></a> 
+                       </div>
+                    </div>
+                    <div class="div-sspan">
+                      <span>App 2</span>  <br>
+                      <span class="span-second">App</span>
+                    </div>
+                  </div>
+
+                  <div class="samll-divv">
+                      <div class="pic-container">
+                         <img src="img/portfolio/portfolio-4.jpg" alt="Picture is here" width="100%" height="220px">
+                         <div class="blank-hover">
+                           <a href="img/portfolio/portfolio-4.jpg"><i class="fa fa-plus"></i></a> 
+                           <a href="Portofilo-Details.html"  target="black"><i class="fa fa-link"></i></a> 
+                         </div>
+                      </div>
+                      <div class="div-sspan">
+                        <span>Card 2</span>  <br>
+                        <span class="span-second">Card</span>
+                      </div>
+                    </div>
+
+                    <div class="samll-divv">
+                        <div class="pic-container">
+                           <img src="img/portfolio/portfolio-5.jpg" alt="Picture is here" width="100%" height="220px">
+                           <div class="blank-hover">
+                             <a href="img/portfolio/portfolio-5.jpg"><i class="fa fa-plus"></i></a> 
+                             <a href="Portofilo-Details.html"  target="black"><i class="fa fa-link"></i></a> 
+                           </div>
+                        </div>
+                        <div class="div-sspan">
+                          <span>Web 2</span>  <br>
+                          <span class="span-second">Web</span>
+                        </div>
+                      </div>
+
+                      <div class="samll-divv">
+                          <div class="pic-container">
+                             <img src="img/portfolio/portfolio-6.jpg" alt="Picture is here" width="100%" height="220px">
+                             <div class="blank-hover">
+                               <a href="img/portfolio/portfolio-6.jpg"><i class="fa fa-plus"></i></a> 
+                               <a href="Portofilo-Details.html"  target="black"><i class="fa fa-link"></i></a> 
+                             </div>
+                          </div>
+                          <div class="div-sspan">
+                            <span>App 3</span>  <br>
+                            <span class="span-second">App</span>
+                          </div>
+                        </div>
+
+                        <div class="samll-divv">
+                            <div class="pic-container">
+                               <img src="img/portfolio/portfolio-7.jpg" alt="Picture is here" width="100%" height="220px">
+                               <div class="blank-hover">
+                                 <a href="img/portfolio/portfolio-7.jpg"><i class="fa fa-plus"></i></a> 
+                                 <a href="Portofilo-Details.html"  target="black"><i class="fa fa-link"></i></a> 
+                               </div>
+                            </div>
+                            <div class="div-sspan">
+                              <span>Card 1</span>  <br>
+                              <span class="span-second">Card</span>
+                            </div>
+                          </div>
+
+                          <div class="samll-divv">
+                              <div class="pic-container">
+                                 <img src="img/portfolio/portfolio-8.jpg" alt="Picture is here" width="100%" height="220px">
+                                 <div class="blank-hover">
+                                   <a href="img/portfolio/portfolio-8.jpg"><i class="fa fa-plus"></i></a> 
+                                   <a href="Portofilo-Details.html"  target="black"><i class="fa fa-link"></i></a> 
+                                 </div>
+                              </div>
+                              <div class="div-sspan">
+                                <span>Web 1</span>  <br>
+                                <span class="span-second">Web</span>
+                              </div>
+                            </div>
+
+                            <div class="samll-divv">
+                                <div class="pic-container">
+                                   <img src="img/portfolio/portfolio-9.jpg" alt="Picture is here" width="100%" height="220px">
+                                   <div class="blank-hover">
+                                     <a href="img/portfolio/portfolio-9.jpg"><i class="fa fa-plus"></i></a> 
+                                     <a href="Portofilo-Details.html"  target="black"><i class="fa fa-link"></i></a> 
+                                   </div>
+                                </div>
+                                <div class="div-sspan">
+                                  <span>Card 3</span>  <br>
+                                  <span class="span-second">Card</span>
+                                </div>
+                              </div>
+                       <!-- pictures with hover ends -->
+                </div>
+      </section>
+
+      <!-- portofilo ends -->
+
+      <!-- slider section starts right here -->
+      
+      <section id="testomonial" class="sec8">
+          <div class="portofilo">
+              <h1>Testomonial</h1>
+               <hr>
+              <p>Sint aliquam mollitia incidunt. Officia tempora dignissimos ullam voluptatibus</p>
+            </div>
+           
+             
+            <section class="container">
+              <div class="slider-wrapper">
+                  <div class="slider">
+                      <div id="slide-1" class="divf">
+                          <p> <i class="fa fa-quote-left"></i>
+                              Lorem ipsum dolor sit, amet mfhy consectetur adipisicing elit.
+                               Voluptate dolorem animi suscipit delectus necessitatibus,dhdy
+                                inventore laboriosam quis veniam kduw.
+                                <i class="fa fa-quote-right"></i>
+                            </p>
+                            <img src="img/testimonials/testimonials-1.jpg" alt="Picture is here" width="80xp" height="80px"> 
+                            <h3>Saul Goodman</h3>
+                            <h4 class="sppan2">CEO & Founder</h4>
+                      </div>
+      
+                      <div id="slide-2" class="divf">
+                          <p> <i class="fa fa-quote-left"></i>
+                              Lorem ipsum dolor sit, amet mfhy consectetur adipisicing elit.
+                               Voluptate dolorem animi suscipit delectus necessitatibus,dhdy
+                                inventore laboriosam quis veniam kduw.
+                                <i class="fa fa-quote-right"></i>
+                            </p>
+                            <img src="img/testimonials/testimonials-2.jpg" alt="Picture is here" width="80xp" height="80px"> 
+                            <h3>Saul Goodman</h3>
+                            <h4 class="sppan2">CEO & Founder</h4>
+                      </div>
+      
+                      <div id="slide-3" class="divf">
+                          <p> <i class="fa fa-quote-left"></i>
+                              Lorem ipsum dolor sit, amet mfhy consectetur adipisicing elit.
+                               Voluptate dolorem animi suscipit delectus necessitatibus,dhdy
+                                inventore laboriosam quis veniam kduw.
+                                <i class="fa fa-quote-right"></i>
+                            </p>
+                            <img src="img/testimonials/testimonials-3.jpg" alt="Picture is here" width="80xp" height="80px"> 
+                            <h3>Saul Goodman</h3>
+                            <h4 class="sppan2">CEO & Founder</h4>
+                      </div>
+      
+                      <div id="slide-4" class="divf">
+                          <p> <i class="fa fa-quote-left"></i>
+                              Lorem ipsum dolor sit, amet mfhy consectetur adipisicing elit.
+                               Voluptate dolorem animi suscipit delectus necessitatibus,dhdy
+                                inventore laboriosam quis veniam kduw.
+                                <i class="fa fa-quote-right"></i>
+                            </p>
+                            <img src="img/testimonials/testimonials-4.jpg" alt="Picture is here" width="80xp" height="80px"> 
+                            <h3>Saul Goodman</h3>
+                            <h4 class="sppan2">CEO & Founder</h4>
+                      </div>
+      
+                      <div id="slide-5" class="divf">
+                          <p> <i class="fa fa-quote-left"></i>
+                              Lorem ipsum dolor sit, amet mfhy consectetur adipisicing elit.
+                               Voluptate dolorem animi suscipit delectus necessitatibus,dhdy
+                                inventore laboriosam quis veniam kduw.
+                                <i class="fa fa-quote-right"></i>
+                            </p>
+                            <img src="img/testimonials/testimonials-5.jpg" alt="Picture is here" width="80xp" height="80px"> 
+                            <h3>Saul Goodman</h3>
+                            <h4 class="sppan2">CEO & Founder</h4>
+                      </div>
+                  </div>
+      
+                  <div class="slider-nav">
+                      <a href="#slide-1"></a>
+                      <a href="#slide-2"></a>
+                      <a href="#slide-3"></a>
+                      <a href="#slide-4"></a>
+                      <a href="#slide-5"></a>
+                  </div>
+              </div>
+          </section>
+
+             
+
+            
+     </section>
+
+            <!-- section slider ends -->
+
+            <!-- section team -->
+
+            <section class="sec9">
+              <div class="portofilo">
+                <h1>Team</h1>
+                 <hr>
+                <p>Sint aliquam mollitia incidunt. Officia tempora dignissimos ullam voluptatibus</p>
+              </div>
+
+              <div class="container-of-team">
+                    <div>
+                      <img src="img/team/team-1.jpg" alt="picture of our team" width="60%" height="230px">
+                      <span>Walter white</span>
+                      <span class="dspan">Cheif Executive officer</span>
+
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Voluptates incidunt sint architecto.
+                      </p>
+                      
+                     <i id="icon1" class="fab fa-twitter"></i>
+                     <i id="icon1" class="fab fa-facebook"></i>
+                     <i id="icon1" class="fab fa-instagram"></i>
+                     <i id="icon1" class="fab fa-linkedin"></i>
+                    </div>
+
+                    <div>
+                        <img src="img/team/team-2.jpg" alt="picture of our team" width="60%" height="230px">
+                        <span>Sarah Jihinson</span>
+                        <span class="dspan">Product Manager</span>
+  
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                          Voluptates incidunt sint architecto.
+                        </p>
+                        
+                       <i id="icon1" class="fab fa-twitter"></i>
+                       <i id="icon1" class="fab fa-facebook"></i>
+                       <i id="icon1" class="fab fa-instagram"></i>
+                       <i id="icon1" class="fab fa-linkedin"></i>
+                      </div>
+
+                      <div>
+                          <img src="img/team/team-3.jpg" alt="picture of our team" width="60%" height="230px">
+                          <span>William Anderson</span>
+                          <span class="dspan">CTO</span>
+    
+                          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Voluptates incidunt sint architecto.
+                          </p>
+                          
+                         <i id="icon1" class="fab fa-twitter"></i>
+                         <i id="icon1" class="fab fa-facebook"></i>
+                         <i id="icon1" class="fab fa-instagram"></i>
+                         <i id="icon1" class="fab fa-linkedin"></i>
+                        </div>
+                   </div>
+              </section>
+
+              <!-- section Team ends -->
+
+              <!-- section contact -->
+              <section id="contact" class="sec10">
+                  <div class="portofilo">
+                      <h1>Contact</h1>
+                       <hr>
+                      <p>Sint aliquam mollitia incidunt. Officia tempora dignissimos ullam voluptatibus</p>
+                    </div>
+
+                    <div class="div-location">
+                        <div>
+                           <h2><i class="fa fa-map-marker-alt"></i> Location:</h2>
+                           <address>A108 Adam Street  <br>
+                                    New York,NY 64784794
+                           </address>
+                        </div>
+
+                        <div>
+                            <h2><i class="fa fa-envelope"></i> Email:</h2>
+                            <address>info@gmail.com  <br>
+                                     example@gmail.com
+                            </address>
+                         </div>
+
+                         <div>
+                            <h2><i class="fa fa-tablet-alt "></i> Call:</h2>
+                            <address>+7 534 8373 222 <br>
+                                     +12 47474 48 433
+                            </address>
+                         </div>
+                    </div>
+
+                    <div class="form-div">
+                        <form action="">
+                          <input type="text" placeholder="Your Name">
+                          <input type="email" placeholder="Your Email">  <br>
+                          <input class="subject" type="text" placeholder="Subject"> <br>
+                          <textarea name="" id="" cols="155" rows="10"></textarea>
+                          <input class="submit-button" type="submit" value="Send Message">
+                        </form>
+                    </div>
+                </section>
+
+                <!-- section contact Ends -->
+
+                <!-- contct links -->
+                <section class="sec11">
+                      <div class="adrs">
+                        <h1>Lumia</h1>
+                        <span class="first-one">A108 Adam Street  <br>
+                          New York,NY 64784794      <br>
+                          United States
+                        </span>
+                         <br><br>
+                        <span class="first-one"><b>Phone:</b>+7 356 422 22</span> <br>
+                        <span class="first-one"><b>email:</b>ingo@gmail.com</span>
+                      </div>
+
+                      <div class="adrs1">
+                           <h4>Useful Links</h4>
+                           <i class="fa fa-angle-right"></i><a href="#home">Home </a>   <br>
+                           <i class="fa fa-angle-right"></i><a href="#about">About us </a> <br>
+                           <i class="fa fa-angle-right"></i><a href="#services">Services </a>  <br>
+                           <i class="fa fa-angle-right"></i><a href="#">Terms of service </a>   <br>
+                           <i class="fa fa-angle-right"></i><a href="#">Privacy Policy </a>
+                      </div>
+
+                      <div class="adrs1">
+                        <h4>Our Services</h4>
+                        <i class="fa fa-angle-right"></i><a href="#home">Web Designing </a>   <br>
+                        <i class="fa fa-angle-right"></i><a href="#about">Web Development </a> <br>
+                        <i class="fa fa-angle-right"></i><a href="#services">Product Management </a>  <br>
+                        <i class="fa fa-angle-right"></i><a href="#">Marketing </a>   <br>
+                        <i class="fa fa-angle-right"></i><a href="#">Graphic Design </a>
+                   </div>
+
+                   <div class="newsletter">
+                     <h4>Join Our Newsletter</h4>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Natus, voluptatibus. 
+                    </p>
+                    <form action="">
+                      <input type="text">
+                      <input class="submit-button" type="submit" value="Subscribe">
+                    </form>
+                   </div>
+                </section>
+                <!-- contact links end -->
+
+                <footer>
+                  <div>
+                      <p><i class="fa fa-copyright"></i>Copyright <b>Lumia</b> All Rights Reserved</p>
+                      <p>Designed By <a href="">BootstrabMade</a></p>
+                  </div>
+
+                  <div class="div000">
+                      <i id="icon3" class="fab fa-twitter"></i>
+                      <i id="icon3" class="fab fa-facebook"></i>
+                      <i id="icon3" class="fab fa-skype"></i>
+                      <i id="icon3" class="fab fa-instagram"></i>
+                      <i id="icon3" class="fab fa-linkedin"></i>
+                  </div>
+                   
+                </footer>
+</body>
+</html>
